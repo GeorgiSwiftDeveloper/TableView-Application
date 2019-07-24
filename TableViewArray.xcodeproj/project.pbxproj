@@ -16,6 +16,7 @@
 		1272F63E2142988500680A45 /* TableViewArrayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1272F63D2142988500680A45 /* TableViewArrayUITests.m */; };
 		1272F64D21429B9B00680A45 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1272F64C21429B9B00680A45 /* TableViewController.m */; };
 		1272F65021429BB500680A45 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1272F64F21429BB500680A45 /* TableViewCell.m */; };
+		6A40AD7C22E9222200E5598A /* LandMark.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A40AD7B22E9222200E5598A /* LandMark.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		1272F64C21429B9B00680A45 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		1272F64E21429BB500680A45 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		1272F64F21429BB500680A45 /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		6A40AD7B22E9222200E5598A /* LandMark.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LandMark.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				1272F61A2142988500680A45 /* AppDelegate.m */,
 				1272F64B21429B9B00680A45 /* TableViewController.h */,
 				1272F64C21429B9B00680A45 /* TableViewController.m */,
+				6A40AD7B22E9222200E5598A /* LandMark.plist */,
 				1272F64E21429BB500680A45 /* TableViewCell.h */,
 				1272F64F21429BB500680A45 /* TableViewCell.m */,
 				1272F61F2142988500680A45 /* Main.storyboard */,
@@ -242,6 +245,7 @@
 			files = (
 				1272F6262142988500680A45 /* LaunchScreen.storyboard in Resources */,
 				1272F6232142988500680A45 /* Assets.xcassets in Resources */,
+				6A40AD7C22E9222200E5598A /* LandMark.plist in Resources */,
 				1272F6212142988500680A45 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -18,9 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    fruits = @[@"Apple", @"Banana", @"Orange", @"Melon", @"Lemon"];
+  
     
-    self.tableView.rowHeight = 100;
+    self.tableView.rowHeight = 120;
     
 }
 
