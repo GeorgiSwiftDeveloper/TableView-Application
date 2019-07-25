@@ -55,5 +55,6 @@
 */
 
 - (IBAction)directionAction:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://map.apple.com/?daddr=%@,%@", self.detailModal[3], self.detailModal[4]]] options:@{} completionHandler:nil];
 }
 @end
