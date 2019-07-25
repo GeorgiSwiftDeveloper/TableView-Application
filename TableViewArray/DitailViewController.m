@@ -7,7 +7,7 @@
 //
 
 #import "DitailViewController.h"
-
+#import "MapPin.h"
 @interface DitailViewController ()
 
 @end
@@ -32,8 +32,16 @@
     span.longitudeDelta = 0.005;
     
     CLLocationCoordinate2D locaation;
-    locaation.latitude = [self.detailModal[4] doubleValue];
-    locaation.longitude = [self.detailModal[5] doubleValue];
+    locaation.latitude = [self.detailModal[3] doubleValue];
+    locaation.longitude = [self.detailModal[4] doubleValue];
+    region.span = span;
+    region.center = locaation;
+    
+    [self.mapView setRegion:region animated:YES];
+    
+    MapPin *ann = [[MapPin alloc ] init];
+    ann.coordinate = locaation;
+    [self.mapView addAnnotation:ann];
 }
 
 /*

@@ -19,6 +19,7 @@
 		6A40AD7C22E9222200E5598A /* LandMark.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A40AD7B22E9222200E5598A /* LandMark.plist */; };
 		6A40AD7F22E9367400E5598A /* DitailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A40AD7E22E9367400E5598A /* DitailViewController.m */; };
 		6A40AD8222E9374300E5598A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A40AD8122E9374300E5598A /* MapKit.framework */; };
+		6A40AD8522EA4DC700E5598A /* MapPin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A40AD8422EA4DC700E5598A /* MapPin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		6A40AD7D22E9367400E5598A /* DitailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DitailViewController.h; sourceTree = "<group>"; };
 		6A40AD7E22E9367400E5598A /* DitailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DitailViewController.m; sourceTree = "<group>"; };
 		6A40AD8122E9374300E5598A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		6A40AD8322EA4DC700E5598A /* MapPin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapPin.h; sourceTree = "<group>"; };
+		6A40AD8422EA4DC700E5598A /* MapPin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapPin.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				1272F64C21429B9B00680A45 /* TableViewController.m */,
 				6A40AD7D22E9367400E5598A /* DitailViewController.h */,
 				6A40AD7E22E9367400E5598A /* DitailViewController.m */,
+				6A40AD8322EA4DC700E5598A /* MapPin.h */,
+				6A40AD8422EA4DC700E5598A /* MapPin.m */,
 				1272F64E21429BB500680A45 /* TableViewCell.h */,
 				1272F64F21429BB500680A45 /* TableViewCell.m */,
 				6A40AD7B22E9222200E5598A /* LandMark.plist */,
@@ -288,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A40AD8522EA4DC700E5598A /* MapPin.m in Sources */,
 				1272F6292142988500680A45 /* main.m in Sources */,
 				1272F65021429BB500680A45 /* TableViewCell.m in Sources */,
 				6A40AD7F22E9367400E5598A /* DitailViewController.m in Sources */,
