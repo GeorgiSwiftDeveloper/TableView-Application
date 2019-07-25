@@ -59,6 +59,11 @@
                                         <constraint firstItem="aXS-qM-lVp" firstAttribute="top" secondItem="3CS-ma-CaN" secondAttribute="topMargin" id="z0z-Ni-GdO"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cellAddress" destination="hJC-eZ-SPX" id="rGT-iC-sPC"/>
+                                    <outlet property="cellImage" destination="aXS-qM-lVp" id="Lax-mA-FFO"/>
+                                    <outlet property="cellTitle" destination="g8k-7M-0IA" id="Ehw-ad-9XF"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

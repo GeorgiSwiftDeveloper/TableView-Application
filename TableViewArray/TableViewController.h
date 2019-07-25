@@ -11,10 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TableViewController : UITableViewController {
-    
-    NSArray *fruits;
-    
-    
+ 
+    NSMutableArray *dataSelect;
 }
 
 @end

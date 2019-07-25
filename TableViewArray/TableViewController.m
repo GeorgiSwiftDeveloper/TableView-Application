@@ -7,7 +7,7 @@
 //
 
 #import "TableViewController.h"
-#import "TableViewCell.h"
+#import "TableViewCell.h" 
 
 @interface TableViewController ()
 
@@ -18,8 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-  
-    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"LandMark" ofType:@"plist"];
+    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+    dataSelect = dict[@"Places"];
     self.tableView.rowHeight = 120;
     
 }
@@ -31,7 +32,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return fruits.count;
+    return dataSelect.count;
 }
 
 
@@ -41,8 +42,11 @@
     TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
     // Configure the cell...
-    
-    cell.cellLabel.text = fruits[indexPath.row];
+    NSDictionary *dict = dataSelect[indexPath.row];
+    cell.cellTitle.text = dict[@"Title"];
+    cell.cellAddress.text = dict[@"Address"];
+    cell.cellImage.image = [UIImage imageNamed:dict[@"Image"]];
+
     
     return cell;
     
