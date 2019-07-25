@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -63,6 +64,7 @@
                                     <outlet property="cellAddress" destination="hJC-eZ-SPX" id="rGT-iC-sPC"/>
                                     <outlet property="cellImage" destination="aXS-qM-lVp" id="Lax-mA-FFO"/>
                                     <outlet property="cellTitle" destination="g8k-7M-0IA" id="Ehw-ad-9XF"/>
+                                    <segue destination="5FI-0G-COu" kind="show" identifier="showDetail" id="ikk-Fh-Z47"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -77,6 +79,101 @@
             </objects>
             <point key="canvasLocation" x="784.79999999999995" y="136.28185907046478"/>
         </scene>
+        <!--Ditail View Controller-->
+        <scene sceneID="3Wp-qj-wrZ">
+            <objects>
+                <viewController id="5FI-0G-COu" customClass="DitailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="23m-UG-avP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BigBen" translatesAutoresizingMaskIntoConstraints="NO" id="BAW-52-8ta">
+                                <rect key="frame" x="0.0" y="64" width="375" height="161.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIQ-Tr-niG">
+                                <rect key="frame" x="0.0" y="239.5" width="370" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="tWM-9c-ayx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
+                                <color key="textColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ndt-SK-TD5">
+                                <rect key="frame" x="2" y="281.5" width="370" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="C7s-zb-mfj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="odO-Ye-SL1">
+                                <rect key="frame" x="16" y="329.5" width="343" height="161.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="wVm-4i-q5L">
+                                <rect key="frame" x="16" y="499" width="343" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="IlK-Xw-RuL"/>
+                                </constraints>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3L1-zL-RHz">
+                                <rect key="frame" x="16" y="607" width="343" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="mSS-t1-vLk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                <state key="normal" title="Directions">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="directionAction:" destination="5FI-0G-COu" eventType="touchUpInside" id="brJ-Jb-zIH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3L1-zL-RHz" firstAttribute="top" secondItem="wVm-4i-q5L" secondAttribute="bottom" constant="8" id="0ea-GO-tEN"/>
+                            <constraint firstItem="ao2-Y9-cYx" firstAttribute="trailing" secondItem="3L1-zL-RHz" secondAttribute="trailing" constant="16" id="2G5-JY-hq8"/>
+                            <constraint firstItem="odO-Ye-SL1" firstAttribute="leading" secondItem="ao2-Y9-cYx" secondAttribute="leading" constant="16" id="3cV-DU-s9A"/>
+                            <constraint firstItem="wVm-4i-q5L" firstAttribute="leading" secondItem="ao2-Y9-cYx" secondAttribute="leading" constant="16" id="7NK-bd-Ttg"/>
+                            <constraint firstItem="3L1-zL-RHz" firstAttribute="leading" secondItem="ao2-Y9-cYx" secondAttribute="leading" constant="16" id="7wW-Lj-Dk2"/>
+                            <constraint firstItem="odO-Ye-SL1" firstAttribute="top" secondItem="Ndt-SK-TD5" secondAttribute="bottom" constant="8" id="85A-Q0-WJz"/>
+                            <constraint firstItem="ao2-Y9-cYx" firstAttribute="bottom" secondItem="3L1-zL-RHz" secondAttribute="bottom" constant="20" id="Cvl-jw-jXr"/>
+                            <constraint firstItem="ao2-Y9-cYx" firstAttribute="trailing" secondItem="eIQ-Tr-niG" secondAttribute="trailing" constant="5" id="MGX-Sw-7lw"/>
+                            <constraint firstItem="Ndt-SK-TD5" firstAttribute="top" secondItem="eIQ-Tr-niG" secondAttribute="bottom" constant="2" id="Yb1-R7-x2J"/>
+                            <constraint firstItem="Ndt-SK-TD5" firstAttribute="leading" secondItem="ao2-Y9-cYx" secondAttribute="leading" constant="2" id="caj-Ss-M5u"/>
+                            <constraint firstItem="ao2-Y9-cYx" firstAttribute="trailing" secondItem="wVm-4i-q5L" secondAttribute="trailing" constant="16" id="g0v-Qf-ZDy"/>
+                            <constraint firstItem="BAW-52-8ta" firstAttribute="top" secondItem="ao2-Y9-cYx" secondAttribute="top" id="gac-Mq-RIE"/>
+                            <constraint firstItem="eIQ-Tr-niG" firstAttribute="leading" secondItem="ao2-Y9-cYx" secondAttribute="leading" id="l8e-nP-JHY"/>
+                            <constraint firstItem="wVm-4i-q5L" firstAttribute="top" secondItem="odO-Ye-SL1" secondAttribute="bottom" constant="8" id="lvm-q0-vIL"/>
+                            <constraint firstItem="eIQ-Tr-niG" firstAttribute="top" secondItem="BAW-52-8ta" secondAttribute="bottom" constant="14" id="o8U-u2-gf3"/>
+                            <constraint firstItem="ao2-Y9-cYx" firstAttribute="trailing" secondItem="odO-Ye-SL1" secondAttribute="trailing" constant="16" id="r4Q-72-Ag0"/>
+                            <constraint firstItem="odO-Ye-SL1" firstAttribute="height" secondItem="BAW-52-8ta" secondAttribute="height" id="sEc-c8-DlV"/>
+                            <constraint firstItem="BAW-52-8ta" firstAttribute="leading" secondItem="ao2-Y9-cYx" secondAttribute="leading" id="sOW-HC-bBx"/>
+                            <constraint firstItem="ao2-Y9-cYx" firstAttribute="trailing" secondItem="Ndt-SK-TD5" secondAttribute="trailing" constant="3" id="vmj-yK-VNG"/>
+                            <constraint firstItem="BAW-52-8ta" firstAttribute="trailing" secondItem="ao2-Y9-cYx" secondAttribute="trailing" id="x23-Ph-XsC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ao2-Y9-cYx"/>
+                    </view>
+                    <connections>
+                        <outlet property="direction" destination="3L1-zL-RHz" id="b3x-Hc-NJc"/>
+                        <outlet property="ditailAddress" destination="Ndt-SK-TD5" id="Yw1-ZP-xiy"/>
+                        <outlet property="ditailDescription" destination="odO-Ye-SL1" id="I54-yb-jYn"/>
+                        <outlet property="ditailImage" destination="BAW-52-8ta" id="kv1-DK-NbZ"/>
+                        <outlet property="ditailTitle" destination="eIQ-Tr-niG" id="PYF-52-LSp"/>
+                        <outlet property="mapView" destination="wVm-4i-q5L" id="vUc-63-eEb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o3C-rA-TsE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1628" y="135.38230884557723"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="OXB-ji-7Lh">
             <objects>
@@ -85,6 +182,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FhV-BO-kD4">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="17"/>

@@ -7,7 +7,8 @@
 //
 
 #import "TableViewController.h"
-#import "TableViewCell.h" 
+#import "TableViewCell.h"
+#import "DitailViewController.h"
 
 @interface TableViewController ()
 
@@ -22,6 +23,8 @@
     NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
     dataSelect = dict[@"Places"];
     self.tableView.rowHeight = 100;
+    
+    [[self navigationItem] setBackBarButtonItem:[[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil]];
     
 }
 
@@ -88,14 +91,21 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([[segue identifier ] isEqualToString:@"showDetail"]) {
+        DitailViewController *ditailView = [segue destinationViewController];
+        NSIndexPath *myIndexPath = [self.tableView indexPathForSelectedRow];
+        
+        NSDictionary *dict = dataSelect[myIndexPath.row];
+        ditailView.detailModal = @[dict[@"Title"],
+                                   dict[@"Address"],
+                                   dict[@"Image"]];
+    }
 }
-*/
+
 
 @end
