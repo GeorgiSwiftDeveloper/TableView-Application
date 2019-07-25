@@ -11,6 +11,10 @@
 			<string>London SW1A OAA</string>
 			<key>Image</key>
 			<string>BigBen</string>
+			<key>Latitude</key>
+			<string>51.50069</string>
+			<key>Longitude</key>
+			<string>-0.1245839</string>
 		</dict>
 		<dict>
 			<key>Title</key>
@@ -19,6 +23,10 @@
 			<string>London SW1A 1AA</string>
 			<key>Image</key>
 			<string>BuckinghamPalace</string>
+			<key>Latitude</key>
+			<string>51.499932</string>
+			<key>Longitude</key>
+			<string>0.141142</string>
 		</dict>
 		<dict>
 			<key>Title</key>
@@ -27,6 +35,10 @@
 			<string>London SE 1 7PB</string>
 			<key>Image</key>
 			<string>LondonEye</string>
+			<key>Latitude</key>
+			<string>51.5032803</string>
+			<key>Longitude</key>
+			<string>-0.1196873</string>
 		</dict>
 		<dict>
 			<key>Title</key>
@@ -35,6 +47,10 @@
 			<string>London EC4M 8AD</string>
 			<key>Image</key>
 			<string>St-Pauls</string>
+			<key>Latitude</key>
+			<string>51.5133171</string>
+			<key>Longitude</key>
+			<string>0.0988166</string>
 		</dict>
 		<dict>
 			<key>Title</key>
@@ -43,6 +59,10 @@
 			<string>London SE1 2UP</string>
 			<key>Image</key>
 			<string>TowerBridge</string>
+			<key>Latitude</key>
+			<string>51.5057975</string>
+			<key>Longitude</key>
+			<string>0.0751559</string>
 		</dict>
 		<dict>
 			<key>Title</key>
@@ -51,6 +71,10 @@
 			<string>London SW 1P 3PA</string>
 			<key>Image</key>
 			<string>WestminsterAbbey</string>
+			<key>Latitude</key>
+			<string>51.498762</string>
+			<key>Longitude</key>
+			<string>0.128107</string>
 		</dict>
 	</array>
 </dict>

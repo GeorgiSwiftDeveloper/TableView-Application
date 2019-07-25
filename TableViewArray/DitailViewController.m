@@ -23,6 +23,17 @@
     self.ditailTitle.text = self.detailModal[0];
     self.ditailAddress.text = self.detailModal[1];
     self.ditailImage.image = [UIImage imageNamed:self.detailModal[2]];
+    
+    
+    MKCoordinateRegion region;
+    MKCoordinateSpan span;
+    
+    span.latitudeDelta = 0.005;
+    span.longitudeDelta = 0.005;
+    
+    CLLocationCoordinate2D locaation;
+    locaation.latitude = [self.detailModal[4] doubleValue];
+    locaation.longitude = [self.detailModal[5] doubleValue];
 }
 
 /*

@@ -103,7 +103,9 @@
         NSDictionary *dict = dataSelect[myIndexPath.row];
         ditailView.detailModal = @[dict[@"Title"],
                                    dict[@"Address"],
-                                   dict[@"Image"]];
+                                   dict[@"Image"],
+                                   dict[@"Latitude"],
+                                   dict[@"Longitude"]];
     }
 }
 
