@@ -21,7 +21,7 @@
     NSString *path = [[NSBundle mainBundle] pathForResource:@"LandMark" ofType:@"plist"];
     NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
     dataSelect = dict[@"Places"];
-    self.tableView.rowHeight = 120;
+    self.tableView.rowHeight = 100;
     
 }
 

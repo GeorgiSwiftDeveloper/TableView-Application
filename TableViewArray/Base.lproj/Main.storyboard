@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Fruits-->
+        <!--London LandMark-->
         <scene sceneID="8wL-7b-9re">
             <objects>
                 <tableViewController id="YEG-om-DvK" customClass="TableViewController" sceneMemberID="viewController">
@@ -25,38 +25,38 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BigBen" translatesAutoresizingMaskIntoConstraints="NO" id="aXS-qM-lVp">
-                                            <rect key="frame" x="16" y="11" width="111" height="78"/>
+                                            <rect key="frame" x="7" y="0.0" width="120" height="95"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="78" id="5fA-BI-Xby"/>
-                                                <constraint firstAttribute="width" constant="111" id="TLc-bT-vyk"/>
+                                                <constraint firstAttribute="height" constant="95" id="FPq-vp-ahl"/>
+                                                <constraint firstAttribute="width" constant="120" id="pYU-YW-WJN"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8k-7M-0IA">
-                                            <rect key="frame" x="135" y="11" width="201" height="37"/>
-                                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <rect key="frame" x="135" y="11" width="231" height="37"/>
+                                            <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
+                                            <color key="textColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJC-eZ-SPX">
-                                            <rect key="frame" x="135" y="52" width="201" height="37"/>
-                                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                            <rect key="frame" x="135" y="52" width="231" height="37"/>
+                                            <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="aXS-qM-lVp" firstAttribute="leading" secondItem="3CS-ma-CaN" secondAttribute="leadingMargin" id="6h0-ef-g6Q"/>
-                                        <constraint firstItem="aXS-qM-lVp" firstAttribute="bottom" secondItem="3CS-ma-CaN" secondAttribute="bottomMargin" id="6pp-c6-iaJ"/>
-                                        <constraint firstItem="hJC-eZ-SPX" firstAttribute="leading" secondItem="aXS-qM-lVp" secondAttribute="trailing" constant="8" id="A5D-52-aVt"/>
-                                        <constraint firstItem="hJC-eZ-SPX" firstAttribute="width" secondItem="g8k-7M-0IA" secondAttribute="width" id="CCt-xd-rex"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="g8k-7M-0IA" secondAttribute="trailing" constant="23" id="O3a-Uk-JcH"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="hJC-eZ-SPX" secondAttribute="trailing" constant="23" id="T77-Ia-U1n"/>
-                                        <constraint firstItem="hJC-eZ-SPX" firstAttribute="height" secondItem="g8k-7M-0IA" secondAttribute="height" id="aIP-W0-KoC"/>
-                                        <constraint firstItem="hJC-eZ-SPX" firstAttribute="bottom" secondItem="3CS-ma-CaN" secondAttribute="bottomMargin" id="frL-fT-6GU"/>
-                                        <constraint firstItem="hJC-eZ-SPX" firstAttribute="top" secondItem="g8k-7M-0IA" secondAttribute="bottom" constant="4" id="go0-ay-nvP"/>
-                                        <constraint firstItem="g8k-7M-0IA" firstAttribute="top" secondItem="3CS-ma-CaN" secondAttribute="topMargin" id="hvG-xQ-gCy"/>
-                                        <constraint firstItem="g8k-7M-0IA" firstAttribute="leading" secondItem="aXS-qM-lVp" secondAttribute="trailing" constant="8" id="yGX-vH-cYY"/>
-                                        <constraint firstItem="aXS-qM-lVp" firstAttribute="top" secondItem="3CS-ma-CaN" secondAttribute="topMargin" id="z0z-Ni-GdO"/>
+                                        <constraint firstItem="g8k-7M-0IA" firstAttribute="leading" secondItem="aXS-qM-lVp" secondAttribute="trailing" constant="8" id="9IN-78-g1G"/>
+                                        <constraint firstItem="hJC-eZ-SPX" firstAttribute="height" secondItem="g8k-7M-0IA" secondAttribute="height" id="CWg-gH-D7c"/>
+                                        <constraint firstItem="g8k-7M-0IA" firstAttribute="top" secondItem="3CS-ma-CaN" secondAttribute="top" constant="11" id="Lid-db-3ls"/>
+                                        <constraint firstItem="aXS-qM-lVp" firstAttribute="top" secondItem="3CS-ma-CaN" secondAttribute="top" id="PaG-Ax-GIA"/>
+                                        <constraint firstItem="aXS-qM-lVp" firstAttribute="leading" secondItem="3CS-ma-CaN" secondAttribute="leading" constant="7" id="RQ8-yO-5JV"/>
+                                        <constraint firstAttribute="trailing" secondItem="hJC-eZ-SPX" secondAttribute="trailing" constant="9" id="bWL-gU-uRC"/>
+                                        <constraint firstAttribute="trailing" secondItem="g8k-7M-0IA" secondAttribute="trailing" constant="9" id="dPZ-bd-pW8"/>
+                                        <constraint firstAttribute="bottom" secondItem="aXS-qM-lVp" secondAttribute="bottom" constant="4.5" id="iCF-Br-QCu"/>
+                                        <constraint firstItem="hJC-eZ-SPX" firstAttribute="top" secondItem="g8k-7M-0IA" secondAttribute="bottom" constant="4" id="k5P-QT-ZBc"/>
+                                        <constraint firstAttribute="bottom" secondItem="hJC-eZ-SPX" secondAttribute="bottom" constant="10.5" id="lBK-Um-PqR"/>
+                                        <constraint firstItem="hJC-eZ-SPX" firstAttribute="leading" secondItem="aXS-qM-lVp" secondAttribute="trailing" constant="8" id="pJV-lT-7Cp"/>
+                                        <constraint firstItem="hJC-eZ-SPX" firstAttribute="width" secondItem="g8k-7M-0IA" secondAttribute="width" id="vxL-uz-3dQ"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -71,7 +71,7 @@
                             <outlet property="delegate" destination="YEG-om-DvK" id="Lpd-RQ-ssU"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Fruits" id="2w2-Qc-yfs"/>
+                    <navigationItem key="navigationItem" title="London LandMark" id="2w2-Qc-yfs"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HCb-Om-Pln" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -85,6 +85,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FhV-BO-kD4">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
